@@ -13,6 +13,8 @@ An original neon physics puzzle-arcade game about **gravity-assist slingshots**,
 ![Daily](https://img.shields.io/badge/daily%20mission-endless-ff4fd8?style=for-the-badge&labelColor=0b0826)
 ![License](https://img.shields.io/badge/license-MIT-5dff9e?style=for-the-badge&labelColor=0b0826)
 
+**[▶ Play now](https://jaigod.github.io/orbit-sling/)** · **[⬇ Download APK](https://github.com/JaiGod/orbit-sling/releases/latest/download/OrbitSling.apk)** · **[📦 Releases](https://github.com/JaiGod/orbit-sling/releases)** · **[💻 Source](https://github.com/JaiGod/orbit-sling/blob/main/index.html)** · **[🏢 JaiGod org](https://github.com/JaiGod)**
+
 </div>
 
 ---
@@ -22,6 +24,16 @@ An original neon physics puzzle-arcade game about **gravity-assist slingshots**,
 You are a mission navigator. Every level gives you one probe on a launch pad, a few gold **checkpoint rings** and a **target moon**. Drag back like a slingshot, release, and let planets, moons and black holes bend your path with real **inverse-square gravity**. Collect every ring to unlock the moon, then land on it.
 
 Everything you see and hear is made in code: procedural starfields and nebulae, glowing planets, swirling accretion disks, and a synthesized ambient soundtrack. No images, no audio files, no libraries.
+
+## 📸 Screenshots
+
+| Title screen | Aiming with the trajectory preview |
+|:---:|:---:|
+| [![Title screen](docs/screenshots/title.jpg)](https://jaigod.github.io/orbit-sling/) | [![Aiming on Ring Road with the dotted trajectory preview](docs/screenshots/aim.jpg)](https://jaigod.github.io/orbit-sling/) |
+| **Mid-flight past a black hole** | **Mission select with star ratings** |
+| [![Probe mid-flight on Accretion](docs/screenshots/flight.jpg)](https://jaigod.github.io/orbit-sling/) | [![Mission select grid](docs/screenshots/select.jpg)](https://jaigod.github.io/orbit-sling/) |
+
+<p align="center"><img src="docs/screenshots/mobile.jpg" alt="Orbit Sling on a 390px phone: Rubble Ring level mid-flight" width="260"><br><sub>On a phone (390 px): the Rubble Ring mission, mid-flight</sub></p>
 
 ## ✨ Features
 
@@ -57,6 +69,7 @@ Everything you see and hear is made in code: procedural starfields and nebulae, 
 ```
 orbit-sling/
 ├── index.html                    # The entire game: markup, CSS, engine, levels, audio
+├── docs/screenshots/             # README screenshots
 ├── .github/workflows/android.yml # CI: Capacitor → Gradle → OrbitSling.apk on the v1.0.0 release
 ├── README.md
 └── LICENSE
@@ -90,6 +103,15 @@ You can also just double-click `index.html`, since it has no dependencies.
 **Phones.** The playfield is a fixed 1000×1000 world scaled to fit, which made text and the probe tiny on a 390 px phone. I added a UI scale factor so labels, the probe, the preview dots and the aim arrow grow when the world is small. I also made the drag-to-power distance relative to the screen size so precision feels the same everywhere.
 
 **Sound.** All audio is generated: four detuned oscillators through LFO-swept low-pass filters make the drone, a look-ahead scheduler plays soft sine plucks over a chord progression, and a feedback delay gives it some "space". The thruster is looping noise through a band-pass filter whose gain follows your input.
+
+## 🔗 Links
+
+- ▶ **Play in browser:** https://jaigod.github.io/orbit-sling/
+- ⬇ **Android APK:** [OrbitSling.apk](https://github.com/JaiGod/orbit-sling/releases/latest/download/OrbitSling.apk) · [all releases](https://github.com/JaiGod/orbit-sling/releases)
+- 💻 **Source:** [`index.html`](https://github.com/JaiGod/orbit-sling/blob/main/index.html) · [APK workflow](https://github.com/JaiGod/orbit-sling/blob/main/.github/workflows/android.yml) · [screenshots](https://github.com/JaiGod/orbit-sling/tree/main/docs/screenshots)
+- ⚙️ **Build runs:** [GitHub Actions](https://github.com/JaiGod/orbit-sling/actions)
+- 🏢 **More from JaiGod:** [all repositories](https://github.com/JaiGod)
+- 🎮 **Sibling games:** [Neon Drift 3D](https://jaigod.github.io/neon-drift-3d/) ([source](https://github.com/JaiGod/neon-drift-3d))
 
 ## 🗺️ Ideas for v2
 
